@@ -1,0 +1,28 @@
+{
+  "name": "@bankr/telegram-trader",
+  "version": "1.0.0",
+  "description": "Telegram trading bot using Bankr Wallet API",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx --watch src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mtcute/dispatcher": "^0.27.6",
+    "@mtcute/node": "^0.27.6",
+    "dotenv": "^17.2.3",
+    "esbuild": "^0.27.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Bankr",
+  "license": "MIT"
+}

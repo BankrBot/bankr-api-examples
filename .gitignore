@@ -21,6 +21,7 @@ out/
 
 # IDE and editors
 .vscode/
+.claude/
 .idea/
 *.swp
 *.swo
