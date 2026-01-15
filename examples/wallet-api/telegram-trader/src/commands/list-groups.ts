@@ -1,11 +1,12 @@
 import "dotenv/config";
 import { loadConfig } from "../config";
 import { createTelegramClient } from "../telegram";
-import { registerCommand } from "../cli";
-
-console.log("[DEBUG] list-groups.ts: Module loaded, registering command...");
+import { registerCommand, getOptions } from "../cli";
 
 async function listGroups(): Promise<void> {
+  const options = getOptions();
+  const debug = options.debug || process.env.DEBUG;
+
   const config = loadConfig();
   const client = createTelegramClient(config.telegram);
 
@@ -28,7 +29,7 @@ async function listGroups(): Promise<void> {
   let debugShown = false;
   for await (const dialog of client.iterDialogs()) {
     // Show first dialog structure for debugging
-    if (!debugShown && process.env.DEBUG) {
+    if (!debugShown && debug) {
       console.log("Dialog structure:", JSON.stringify(dialog, null, 2).slice(0, 1000));
       debugShown = true;
     }
@@ -89,7 +90,12 @@ function prompt(message: string): Promise<string> {
 registerCommand({
   name: "list-groups",
   description: "List all groups/channels you're in with their IDs",
-  run: listGroups,
+  action: listGroups,
+  flags: [
+    {
+      name: "debug",
+      alias: "d",
+      description: "Show debug information",
+    },
+  ],
 });
-
-console.log("[DEBUG] list-groups.ts: Command registered successfully");

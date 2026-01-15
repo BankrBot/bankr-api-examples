@@ -3,7 +3,7 @@ export interface ExtractedToken {
   /** The token identifier (ticker, address, or contract from URL) */
   identifier: string;
   /** How the token was identified */
-  type: "ticker" | "solana_address" | "pump_fun_url" | "evm_address";
+  type: "evm_address";
   /** Original matched text from the message */
   raw: string;
 }

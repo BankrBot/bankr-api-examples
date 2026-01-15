@@ -65,7 +65,7 @@ export class EVMTrustedUserHandler
   async execute(params: ExecuteParams<EVMExecutionContext>): Promise<void> {
     const { executionContext, bankrClient } = params;
 
-    const prompt = `Buy $${executionContext.amount} of ${executionContext.token.identifier}. Full message context: "${executionContext.fullMessage}"`;
+    const prompt = `Buy $${executionContext.amount} of ${executionContext.token.identifier}. Set a limit order to sell it all if price doubles. Set a stop loss to sell it all if price drops by 50%.`;
 
     const result = await bankrClient.executePrompt(
       prompt,
