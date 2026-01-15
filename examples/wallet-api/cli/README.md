@@ -19,7 +19,6 @@ Chat with your Bankr AI wallet directly from the terminal. A beautiful TUI (Term
 
 ```bash
 # Install dependencies
-cd platforms/cli
 npm install
 
 # Or with bun
@@ -37,7 +36,7 @@ export BANKR_API_KEY=bk_your_api_key_here
 
 **Option 2: .env file (recommended)**
 
-Create a `.env` file in the `platforms/cli` directory:
+Create a `.env` file in the project directory:
 ```
 BANKR_API_KEY=bk_your_api_key_here
 ```
@@ -134,12 +133,7 @@ The Wallet API requires Bankr Club membership. Visit the Bankr web app to sign u
 
 ### "Connection refused"
 
-Make sure the Bankr API server is running:
-
-```bash
-cd packages/api
-bun run dev
-```
+Make sure you have the correct `BANKR_API_URL` configured and that you can reach the Bankr API server.
 
 ## License
 
