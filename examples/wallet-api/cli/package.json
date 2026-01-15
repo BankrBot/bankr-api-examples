@@ -1,0 +1,43 @@
+{
+  "name": "@bankr/cli",
+  "version": "1.0.0",
+  "description": "Bankr CLI - Chat with Bankr from your terminal",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "bankr": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.tsx",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "dotenv": "^17.2.3",
+    "ink": "^5.0.1",
+    "ink-text-input": "^6.0.0",
+    "nanoid": "^5.0.9",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "bankr",
+    "cli",
+    "terminal",
+    "chat",
+    "web3",
+    "crypto"
+  ],
+  "author": "Bankr",
+  "license": "MIT"
+}

@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  /* Retro TV Color Palette */
+  --retro-pink: #f5d6d0;
+  --retro-pink-dark: #e8c4be;
+  --retro-cream: #e8d5c4;
+  --retro-cream-dark: #d4c0ad;
+  --retro-coral: #e87b35;
+  --retro-coral-glow: #ff9b55;
+  --retro-teal: #4a9b9b;
+  --retro-dark: #2a1810;
+  --retro-screen: #1a0f0a;
+
+  --background: var(--retro-pink);
+  --foreground: var(--retro-dark);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-retro-pink: var(--retro-pink);
+  --color-retro-pink-dark: var(--retro-pink-dark);
+  --color-retro-cream: var(--retro-cream);
+  --color-retro-cream-dark: var(--retro-cream-dark);
+  --color-retro-coral: var(--retro-coral);
+  --color-retro-coral-glow: var(--retro-coral-glow);
+  --color-retro-teal: var(--retro-teal);
+  --color-retro-dark: var(--retro-dark);
+  --color-retro-screen: var(--retro-screen);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CRT Scanline Effect */
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.crt-scanlines {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1) 0px,
+    rgba(0, 0, 0, 0.1) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  opacity: 0.3;
+}
+
+/* Screen glow effect */
+.screen-glow {
+  box-shadow:
+    inset 0 0 30px rgba(232, 123, 53, 0.3),
+    0 0 20px rgba(232, 123, 53, 0.2);
+}
+
+.screen-glow-listening {
+  box-shadow:
+    inset 0 0 40px rgba(232, 123, 53, 0.5),
+    0 0 30px rgba(232, 123, 53, 0.4);
+}
+
+.screen-glow-processing {
+  box-shadow:
+    inset 0 0 35px rgba(74, 155, 155, 0.4),
+    0 0 25px rgba(74, 155, 155, 0.3);
+}
+
+.screen-glow-speaking {
+  box-shadow:
+    inset 0 0 45px rgba(255, 155, 85, 0.5),
+    0 0 35px rgba(255, 155, 85, 0.4);
+}
+
+.screen-glow-error {
+  box-shadow:
+    inset 0 0 40px rgba(220, 50, 50, 0.5),
+    0 0 30px rgba(220, 50, 50, 0.4);
+}
