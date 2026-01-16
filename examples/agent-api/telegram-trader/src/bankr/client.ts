@@ -31,7 +31,7 @@ export interface PollOptions {
   onAgentStatusUpdate?: AgentStatusCallback;
 }
 
-/** Bankr Wallet API client */
+/** Bankr Agent API client */
 export class BankrClient {
   constructor(
     private readonly apiUrl: string,

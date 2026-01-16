@@ -218,9 +218,7 @@ export function App(): React.ReactElement {
           <Text color="cyan">export BANKR_API_KEY=bk_your_api_key_here</Text>
           <Text />
           <Text dimColor>You can get an API key from the Bankr dashboard.</Text>
-          <Text dimColor>
-            Note: You must be a Bankr Club member to use the Wallet API.
-          </Text>
+          <Text dimColor>You can get an API key from the Bankr dashboard.</Text>
         </Box>
         <Box marginTop={1}>
           <Text dimColor>Press Ctrl+C to exit</Text>

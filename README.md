@@ -8,15 +8,15 @@ This repository provides ready-to-use examples showing different ways to integra
 
 ## Examples
 
-### Wallet API
+### Agent API
 
-The Wallet API allows you to interact with your Bankr AI wallet programmatically. These examples demonstrate various interfaces for chatting with your wallet assistant.
+The Agent API allows you to interact with your Bankr AI agent programmatically. These examples demonstrate various interfaces for chatting with your agent.
 
 | Example | Description |
 |---------|-------------|
-| [CLI](./examples/wallet-api/cli) | Terminal-based chat interface using Ink (React for CLI). Send messages and receive responses directly from your terminal. |
-| [Voice](./examples/wallet-api/voice) | Voice-powered web interface with speech recognition and text-to-speech. Speak to your wallet and hear responses aloud. |
-| [Telegram Trader](./examples/wallet-api/telegram-trader) | Simple proof-of-concept bot that monitors Telegram groups and auto-executes trades via Bankr. Extend for your own use cases. |
+| [CLI](./examples/agent-api/cli) | Terminal-based chat interface using Ink (React for CLI). Send messages and receive responses directly from your terminal. |
+| [Voice](./examples/agent-api/voice) | Voice-powered web interface with speech recognition and text-to-speech. Speak to your wallet and hear responses aloud. |
+| [Telegram Trader](./examples/agent-api/telegram-trader) | Simple proof-of-concept bot that monitors Telegram groups and auto-executes trades via Bankr. Extend for your own use cases. |
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ The Wallet API allows you to interact with your Bankr AI wallet programmatically
 ```
 bankr-api-examples/
 └── examples/
-    └── wallet-api/          # Wallet API examples
+    └── agent-api/           # Agent API examples
         ├── cli/             # Terminal chat interface
         ├── voice/           # Voice-powered web interface
         └── telegram-trader/ # Telegram trading bot (PoC)

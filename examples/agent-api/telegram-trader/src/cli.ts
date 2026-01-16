@@ -26,7 +26,7 @@ class CLI {
     this.program = new CommanderCommand();
     this.program
       .name("telegram-trader")
-      .description("Telegram trading bot using Bankr Wallet API")
+      .description("Telegram trading bot using Bankr Agent API")
       .version("1.0.0")
       // Add global flags that work for default command
       .option("-v, --verbose", "Enable verbose/debug logging");
