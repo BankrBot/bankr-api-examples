@@ -109,7 +109,7 @@ npm run typecheck
 
 ## How It Works
 
-The CLI uses the Wallet API (`/wallet/prompt`) which:
+The CLI uses the Agent API (`/agent/prompt`) which:
 
 1. Does not require x402 payment (free for Bankr Club members)
 2. Supports auto-execution of transactions

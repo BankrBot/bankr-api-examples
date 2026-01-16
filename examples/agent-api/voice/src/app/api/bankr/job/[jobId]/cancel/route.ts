@@ -25,7 +25,7 @@ export async function POST(
   }
 
   try {
-    const response = await fetch(`${API_URL}/wallet/job/${jobId}/cancel`, {
+    const response = await fetch(`${API_URL}/agent/job/${jobId}/cancel`, {
       method: "POST",
       headers: {
         "x-api-key": API_KEY,

@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const response = await fetch(`${API_URL}/wallet/prompt`, {
+    const response = await fetch(`${API_URL}/agent/prompt`, {
       method: "POST",
       headers: {
         "x-api-key": API_KEY,
