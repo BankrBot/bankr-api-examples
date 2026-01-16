@@ -22,12 +22,19 @@ export interface GroupHandlerEntry {
  */
 export const GROUP_HANDLERS: GroupHandlerEntry[] = [
   {
-    chatId: -5231913338,
+    // Replace with a real chat id
+    chatId: -1001234567890,
     enabled: true,
     create: (params) =>
       new EVMTrustedUserHandler(
-        { chatId: -5231913338, name: params.resolvedName, enabled: true },
-        "aspynp"
+        {
+          // Replace with a real chat id
+          chatId: -1001234567890,
+          name: params.resolvedName,
+          enabled: true,
+        },
+        // Replace with a real username
+        "myusername"
       ),
   },
   // Add more groups here:
