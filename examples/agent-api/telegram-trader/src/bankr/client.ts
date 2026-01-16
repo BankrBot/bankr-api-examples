@@ -40,7 +40,7 @@ export class BankrClient {
 
   /** Submit a prompt to the Bankr wallet */
   async submitPrompt(prompt: string): Promise<PromptResponse> {
-    const response = await fetch(`${this.apiUrl}/wallet/prompt`, {
+    const response = await fetch(`${this.apiUrl}/agent/prompt`, {
       method: "POST",
       headers: {
         "x-api-key": this.apiKey,
@@ -61,7 +61,7 @@ export class BankrClient {
 
   /** Get the status of a job */
   async getJobStatus(jobId: string): Promise<JobStatusResponse> {
-    const response = await fetch(`${this.apiUrl}/wallet/job/${jobId}`, {
+    const response = await fetch(`${this.apiUrl}/agent/job/${jobId}`, {
       method: "GET",
       headers: {
         "x-api-key": this.apiKey,
@@ -80,7 +80,7 @@ export class BankrClient {
 
   /** Cancel a running job */
   async cancelJob(jobId: string): Promise<JobStatusResponse> {
-    const response = await fetch(`${this.apiUrl}/wallet/job/${jobId}/cancel`, {
+    const response = await fetch(`${this.apiUrl}/agent/job/${jobId}/cancel`, {
       method: "POST",
       headers: {
         "x-api-key": this.apiKey,

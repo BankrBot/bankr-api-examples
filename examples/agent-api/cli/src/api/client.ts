@@ -31,7 +31,7 @@ export async function submitPrompt(prompt: string): Promise<PromptResponse> {
     throw new BankrApiError("BANKR_API_KEY environment variable is not set");
   }
 
-  const response = await fetch(`${API_URL}/wallet/prompt`, {
+  const response = await fetch(`${API_URL}/agent/prompt`, {
     method: "POST",
     headers: {
       "x-api-key": API_KEY,
@@ -55,7 +55,7 @@ export async function getJobStatus(jobId: string): Promise<JobStatusResponse> {
     throw new BankrApiError("BANKR_API_KEY environment variable is not set");
   }
 
-  const response = await fetch(`${API_URL}/wallet/job/${jobId}`, {
+  const response = await fetch(`${API_URL}/agent/job/${jobId}`, {
     method: "GET",
     headers: {
       "x-api-key": API_KEY,
@@ -77,7 +77,7 @@ export async function cancelJob(jobId: string): Promise<JobStatusResponse> {
     throw new BankrApiError("BANKR_API_KEY environment variable is not set");
   }
 
-  const response = await fetch(`${API_URL}/wallet/job/${jobId}/cancel`, {
+  const response = await fetch(`${API_URL}/agent/job/${jobId}/cancel`, {
     method: "POST",
     headers: {
       "x-api-key": API_KEY,

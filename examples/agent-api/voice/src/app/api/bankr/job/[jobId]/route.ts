@@ -25,7 +25,7 @@ export async function GET(
   }
 
   try {
-    const response = await fetch(`${API_URL}/wallet/job/${jobId}`, {
+    const response = await fetch(`${API_URL}/agent/job/${jobId}`, {
       method: "GET",
       headers: {
         "x-api-key": API_KEY,
