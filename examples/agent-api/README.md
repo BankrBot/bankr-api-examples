@@ -12,7 +12,6 @@ The Agent API enables you to chat with your Bankr AI agent programmatically. It 
 
 ## Requirements
 
-- Bankr Club membership
 - API key from https://bankr.bot/api
 
 ## Examples

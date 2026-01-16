@@ -13,7 +13,6 @@ A voice-powered web interface for interacting with Bankr. Speak to your AI walle
 ## Requirements
 
 - **Browser**: Chrome, Edge, or Safari (Firefox not supported - limited speech recognition)
-- **Bankr Club Membership**: Required for Wallet API access
 - **API Key**: Generate one at https://bankr.bot/api
 
 ## Setup
@@ -51,7 +50,7 @@ npm run dev
 
 ## How It Works
 
-This application demonstrates the Bankr Wallet API:
+This application demonstrates the Bankr Agent API:
 
 1. **Voice → Text**: Browser's Web Speech API converts your speech to text
 2. **Text → Bankr**: Your message is sent to the Bankr API via secure backend routes

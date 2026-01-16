@@ -1,6 +1,6 @@
 # Telegram Trader Bot
 
-A simple proof-of-concept bot that monitors Telegram groups for token addresses and automatically executes trades via the Bankr Wallet API.
+A simple proof-of-concept bot that monitors Telegram groups for token addresses and automatically executes trades via the Bankr Agent API.
 
 > **Proof of Concept**: This is a minimal example to demonstrate Telegram + Bankr integration. It's meant to be extended and customized for your specific use cases.
 
@@ -34,7 +34,6 @@ A simple proof-of-concept bot that monitors Telegram groups for token addresses 
 - Node.js 18+
 - Telegram API credentials (from https://my.telegram.org)
 - Bankr API key (from https://bankr.bot/api)
-- Bankr Club membership
 
 ## Setup
 

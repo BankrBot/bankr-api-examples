@@ -13,7 +13,7 @@ Chat with your Bankr AI wallet directly from the terminal. A beautiful TUI (Term
 ## Prerequisites
 
 - Node.js 18 or higher
-- A Bankr API key (requires Bankr Club membership)
+- A Bankr API key (from https://bankr.bot/api)
 
 ## Installation
 
@@ -111,8 +111,7 @@ npm run typecheck
 
 The CLI uses the Agent API (`/agent/prompt`) which:
 
-1. Does not require x402 payment (free for Bankr Club members)
-2. Supports auto-execution of transactions
+1. Supports auto-execution of transactions
 3. Returns structured responses with transaction data
 
 The CLI polls the job status endpoint until completion and displays real-time status updates.
@@ -126,10 +125,6 @@ Make sure you've set the `BANKR_API_KEY` environment variable:
 ```bash
 export BANKR_API_KEY=bk_your_api_key_here
 ```
-
-### "Bankr Club membership required"
-
-The Wallet API requires Bankr Club membership. Visit the Bankr web app to sign up.
 
 ### "Connection refused"
 
