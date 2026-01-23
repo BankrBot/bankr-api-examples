@@ -65,7 +65,7 @@ bun run dev
 | Variable | Description | Default |
 |----------|-------------|---------|
 | `BANKR_API_KEY` | Your Bankr API key (required) | - |
-| `BANKR_API_URL` | API base URL | `http://localhost:3333` |
+| `BANKR_API_URL` | API base URL | `https://api.bankr.bot` |
 
 ## Example Session
 
