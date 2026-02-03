@@ -1,4 +1,4 @@
-# Bankr API Examples
+# sudo su && Bankr API Examples
 
 A collection of example projects demonstrating how to build applications on top of the Bankr API.
 
